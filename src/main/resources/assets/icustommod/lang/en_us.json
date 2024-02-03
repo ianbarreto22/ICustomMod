@@ -1,4 +1,13 @@
 {
   "item.icustommod.fire_shard": "Fire Shard",
-  "creativetab.icustom_items": "ICustom Items"
+
+  "item.icustommod.fire_blade": "Fire Blade",
+  "item.icustommod.fire_pickaxe": "Fire Pickaxe",
+  "item.icustommod.fire_axe": "Fire Axe",
+  "item.icustommod.fire_shovel": "Fire Shovel",
+  "item.icustommod.fire_hoe": "Fire Hoe",
+
+  "creativetab.icustom_items": "ICustom Items",
+  "creativetab.icustom_tools": "ICustom Tools",
+  "creativetab.icustom_combat": "ICustom Combat"
 }

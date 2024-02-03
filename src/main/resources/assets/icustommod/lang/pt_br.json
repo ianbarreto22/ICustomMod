@@ -1,4 +1,13 @@
 {
   "item.icustommod.fire_shard": "Fragmento de fogo",
-  "creativetab.icustom_items": " Items do ICustom"
+
+  "item.icustommod.fire_blade": "Lâmina de Fogo",
+  "item.icustommod.fire_pickaxe": "Picareta de Fogo",
+  "item.icustommod.fire_axe": "Machado de Fogo",
+  "item.icustommod.fire_shovel": "Pá de Fogo",
+  "item.icustommod.fire_hoe": "Enxada de Fogo",
+
+  "creativetab.icustom_items": "Items do ICustom",
+  "creativetab.icustom_tools": "Ferramentas do ICustom",
+  "creativetab.icustom_combat": "Combate do ICustom"
 }

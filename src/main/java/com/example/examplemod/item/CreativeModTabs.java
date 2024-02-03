@@ -21,6 +21,25 @@ public class CreativeModTabs {
                     })
                     .build());
 
+    public static final RegistryObject<CreativeModeTab> ICUSTOM_TOOLS = CREATIVE_MOD_TABS.register("icustom_tools",
+            ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.FIRE_PICKAXE.get()))
+                    .title(Component.translatable("creativetab.icustom_tools"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.FIRE_PICKAXE.get());
+                        pOutput.accept(ModItems.FIRE_SHOVEL.get());
+                        pOutput.accept(ModItems.FIRE_AXE.get());
+                        pOutput.accept(ModItems.FIRE_HOE.get());
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> ICUSTOM_COMBAT = CREATIVE_MOD_TABS.register("icustom_combat",
+            ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.FIRE_BLADE.get()))
+                    .title(Component.translatable("creativetab.icustom_combat"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.FIRE_BLADE.get());
+                    })
+                    .build());
+
     public static void register(IEventBus eventBus){
         CREATIVE_MOD_TABS.register(eventBus);
     }
