@@ -18,6 +18,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.FIRE_SHARD);
+        simpleItem(ModItems.STONE_ROD);
         handheld(ModItems.FIRE_SHOVEL);
         handheld(ModItems.FIRE_PICKAXE);
         handheld(ModItems.FIRE_AXE);

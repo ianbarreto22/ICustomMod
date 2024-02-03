@@ -18,6 +18,7 @@ public class CreativeModTabs {
                     .title(Component.translatable("creativetab.icustom_items"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.FIRE_SHARD.get());
+                        pOutput.accept(ModItems.STONE_ROD.get());
                     })
                     .build());
 

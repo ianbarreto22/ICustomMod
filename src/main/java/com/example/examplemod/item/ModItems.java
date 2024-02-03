@@ -12,7 +12,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> FIRE_SHARD = ITEMS.register("fire_shard", () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> FIRE_BLADE = ITEMS.register("fire_blade", () -> new SwordItem(ModToolTiers.FIRE_SHARD,4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> STONE_ROD = ITEMS.register("stone_rod", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> FIRE_BLADE = ITEMS.register("fire_blade", () -> new SwordItem(ModToolTiers.FIRE_SHARD,4, 2, new Item.Properties(
+
+    )));
     public static final RegistryObject<Item> FIRE_PICKAXE = ITEMS.register("fire_pickaxe", () -> new PickaxeItem(ModToolTiers.FIRE_SHARD,1, 1, new Item.Properties()));
     public static final RegistryObject<Item> FIRE_AXE = ITEMS.register("fire_axe", () -> new AxeItem(ModToolTiers.FIRE_SHARD,7, 1, new Item.Properties()));
     public static final RegistryObject<Item> FIRE_SHOVEL = ITEMS.register("fire_shovel", () -> new ShovelItem(ModToolTiers.FIRE_SHARD,0, 0, new Item.Properties()));

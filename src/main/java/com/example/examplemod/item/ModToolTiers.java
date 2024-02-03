@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ModToolTiers {
     public static final Tier FIRE_SHARD = TierSortingRegistry.registerTier(
-      new ForgeTier(5,1500,5f, 4f, 25,
+      new ForgeTier(5,1500,20f, 4f, 25,
               ModTags.Blocks.NEEDS_FIRE_SHARD_TOOL, ()-> Ingredient.of(ModItems.FIRE_SHARD.get())),
             new ResourceLocation(ICustomMod.MODID, "fire_shard"), List.of(Tiers.NETHERITE), List.of()
     );
