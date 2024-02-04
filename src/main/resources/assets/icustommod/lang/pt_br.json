@@ -8,6 +8,8 @@
   "item.icustommod.fire_hoe": "Enxada de Fogo",
   "item.icustommod.stone_rod": "Haste de Pedra",
 
+  "block.icustommod.firestone": "Pedra Infernal",
+
   "creativetab.icustom_items": "Items do ICustom",
   "creativetab.icustom_tools": "Ferramentas do ICustom",
   "creativetab.icustom_combat": "Combate do ICustom"
