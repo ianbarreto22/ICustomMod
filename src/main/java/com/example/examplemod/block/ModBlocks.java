@@ -5,9 +5,7 @@ import com.example.examplemod.block.custom.Firestone;
 import com.example.examplemod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -25,6 +23,17 @@ public class ModBlocks {
                     .copy(Blocks.NETHERITE_BLOCK)
                     .sound(SoundType.STONE)
                     .lightLevel(lightEmission -> 15)
+            ));
+
+    public static final RegistryObject<Block> SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
+            ()-> new StairBlock(
+                    () -> Blocks.SMOOTH_STONE.defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)
+            ));
+
+    public static  final  RegistryObject<Block> SMOOTH_STONE_WALL = registerBlock("smooth_stone_wall",
+            ()-> new WallBlock(
+                    BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)
             ));
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block){

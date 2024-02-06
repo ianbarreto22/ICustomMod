@@ -1,16 +1,24 @@
 {
   "item.icustommod.fire_shard": "Fire Shard",
+  "item.icustommod.golden_potato": "Golden Potato",
 
-  "item.icustommod.fire_blade": "Fire Blade",
-  "item.icustommod.fire_pickaxe": "Fire Pickaxe",
-  "item.icustommod.fire_axe": "Fire Axe",
-  "item.icustommod.fire_shovel": "Fire Shovel",
-  "item.icustommod.fire_hoe": "Fire Hoe",
-  "item.icustommod.stone_rod": "Stone Rod",
+  "item.icustommod.fertilizer": "Fertilizer",
+  "tooltip.icustommod.fertilizer": "Use fertilizer to turn a dirt block into a grass block",
+
+  "item.icustommod.fire_blade": "Fire blade",
+  "item.icustommod.fire_pickaxe": "Fire pickaxe",
+  "item.icustommod.fire_axe": "Fire axe",
+  "item.icustommod.fire_shovel": "Fire shovel",
+  "item.icustommod.fire_hoe": "Fire hoe",
+  "item.icustommod.stone_rod": "Stone rod",
 
   "block.icustommod.firestone": "Firestone",
+  "block.icustommod.smooth_stone_stairs": "Smooth stone stairs",
+  "block.icustommod.smooth_stone_wall": "Smooth stone wall",
 
   "creativetab.icustom_items": "ICustom Items",
   "creativetab.icustom_tools": "ICustom Tools",
-  "creativetab.icustom_combat": "ICustom Combat"
+  "creativetab.icustom_combat": "ICustom Combat",
+  "creativetab.icustom_blocks": "ICustom Blocks",
+  "creativetab.icustom_foods": "ICustom Foods"
 }

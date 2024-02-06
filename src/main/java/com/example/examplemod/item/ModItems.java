@@ -1,6 +1,7 @@
 package com.example.examplemod.item;
 
 import com.example.examplemod.ICustomMod;
+import com.example.examplemod.item.custom.Fertilizer;
 import com.example.examplemod.item.custom.FireBlade;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +21,9 @@ public class ModItems {
     public static final RegistryObject<Item> FIRE_AXE = ITEMS.register("fire_axe", () -> new AxeItem(ModToolTiers.FIRE_SHARD,7, 1, new Item.Properties()));
     public static final RegistryObject<Item> FIRE_SHOVEL = ITEMS.register("fire_shovel", () -> new ShovelItem(ModToolTiers.FIRE_SHARD,0, 0, new Item.Properties()));
     public static final RegistryObject<Item> FIRE_HOE = ITEMS.register("fire_hoe", () -> new HoeItem(ModToolTiers.FIRE_SHARD,0, 0, new Item.Properties()));
+    public static  final RegistryObject<Item> GOLDEN_POTATO = ITEMS.register("golden_potato", () -> new Item(new Item.Properties().food(ModFoods.GOLDEN_POTATO)));
+
+    public static final RegistryObject<Item> FERTILIZER = ITEMS.register("fertilizer", () -> new Fertilizer(new Item.Properties().durability(150)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

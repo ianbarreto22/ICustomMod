@@ -1,16 +1,24 @@
 {
   "item.icustommod.fire_shard": "Fragmento de fogo",
+  "item.icustommod.golden_potato": "Batata dourada",
 
-  "item.icustommod.fire_blade": "Lâmina de Fogo",
-  "item.icustommod.fire_pickaxe": "Picareta de Fogo",
-  "item.icustommod.fire_axe": "Machado de Fogo",
-  "item.icustommod.fire_shovel": "Pá de Fogo",
-  "item.icustommod.fire_hoe": "Enxada de Fogo",
-  "item.icustommod.stone_rod": "Haste de Pedra",
+  "item.icustommod.fertilizer": "Fertilizante",
+  "tooltip.icustommod.fertilizer": "Use o fertilizante para transformar um bloco de terra em um bloco de grama",
 
-  "block.icustommod.firestone": "Pedra Infernal",
+  "item.icustommod.fire_blade": "Lâmina de fogo",
+  "item.icustommod.fire_pickaxe": "Picareta de fogo",
+  "item.icustommod.fire_axe": "Machado de fogo",
+  "item.icustommod.fire_shovel": "Pá de fogo",
+  "item.icustommod.fire_hoe": "Enxada de fogo",
+  "item.icustommod.stone_rod": "Haste de pedra",
+
+  "block.icustommod.firestone": "Pedra infernal",
+  "block.icustommod.smooth_stone_stairs": "Escadas de pedra lisa",
+  "block.icustommod.smooth_stone_wall": "Muro de pedra lisa",
 
   "creativetab.icustom_items": "Items do ICustom",
   "creativetab.icustom_tools": "Ferramentas do ICustom",
-  "creativetab.icustom_combat": "Combate do ICustom"
+  "creativetab.icustom_combat": "Combate do ICustom",
+  "creativetab.icustom_blocks": "Blocos do ICustom",
+  "creativetab.icustom_foods": "Comidas do ICustom"
 }

@@ -1,6 +1,7 @@
 package com.example.examplemod.item;
 
 import com.example.examplemod.ICustomMod;
+import com.example.examplemod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,7 @@ public class CreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.FIRE_SHARD.get());
                         pOutput.accept(ModItems.STONE_ROD.get());
+                        pOutput.accept(ModItems.FERTILIZER.get());
                     })
                     .build());
 
@@ -38,6 +40,24 @@ public class CreativeModTabs {
                     .title(Component.translatable("creativetab.icustom_combat"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.FIRE_BLADE.get());
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> ICUSTOM_BLOCKS = CREATIVE_MOD_TABS.register("icustom_blocks",
+            ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ModBlocks.FIRESTONE.get()))
+                    .title(Component.translatable("creativetab.icustom_blocks"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModBlocks.FIRESTONE.get());
+                        pOutput.accept(ModBlocks.SMOOTH_STONE_STAIRS.get());
+                        pOutput.accept(ModBlocks.SMOOTH_STONE_WALL.get());
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> ICUSTOM_FOODS = CREATIVE_MOD_TABS.register("icustom_foods",
+            ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.GOLDEN_POTATO.get()))
+                    .title(Component.translatable("creativetab.icustom_foods"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.GOLDEN_POTATO.get());
                     })
                     .build());
 

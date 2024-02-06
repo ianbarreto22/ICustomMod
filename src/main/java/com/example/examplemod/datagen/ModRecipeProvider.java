@@ -1,14 +1,15 @@
 package com.example.examplemod.datagen;
 
+import com.example.examplemod.block.ModBlocks;
 import com.example.examplemod.item.ModItems;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.ShapelessRecipe;
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import org.jetbrains.annotations.NotNull;
 
@@ -80,5 +81,48 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', ModItems.STONE_ROD.get())
                 .unlockedBy(getHasName(ModItems.FIRE_SHARD.get()), has(ModItems.FIRE_SHARD.get()))
                 .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIRESTONE.get())
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', ModItems.FIRE_SHARD.get())
+                .unlockedBy(getHasName(ModItems.FIRE_SHARD.get()), has(ModItems.FIRE_SHARD.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.GOLDEN_POTATO.get())
+                .pattern("GGG")
+                .pattern("GPG")
+                .pattern("GGG")
+                .define('G', Items.GOLD_NUGGET)
+                .define('P', Items.POTATO)
+                .unlockedBy(getHasName(Items.POTATO), has(Items.POTATO))
+                .unlockedBy(getHasName(Items.GOLD_NUGGET), has(Items.GOLD_NUGGET))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_STAIRS.get(), 4)
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .define('S', Items.SMOOTH_STONE)
+                .unlockedBy(getHasName(Items.SMOOTH_STONE), has(Items.SMOOTH_STONE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_WALL.get(), 6)
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', Items.SMOOTH_STONE)
+                .unlockedBy(getHasName(Items.SMOOTH_STONE), has(Items.SMOOTH_STONE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.FERTILIZER.get())
+                .pattern("BB")
+                .pattern("BB")
+                .define('B', Items.BONE_MEAL)
+                .unlockedBy(getHasName(Items.BONE_MEAL), has(Items.BONE_MEAL))
+                .save(recipeOutput);
+
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_STAIRS.get(), Blocks.SMOOTH_STONE);
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_WALL.get(), Blocks.SMOOTH_STONE);
     }
+
 }
